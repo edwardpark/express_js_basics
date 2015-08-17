@@ -7,8 +7,8 @@ app.get('/', function(request, response){
 });
 
 app.get('/blocks',function(request,response){
-  var blocks = ['fixed','moveable','rotating'];
-  response.send(blocks); //send function will convert to json
+
+response.redirect(301, '/parts');//pass status code to perm 
 });
 
 app.listen(3000, function(){
